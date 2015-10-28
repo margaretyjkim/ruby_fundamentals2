@@ -35,10 +35,9 @@ puts list
 
 #BONUS
 
-# def total_students(sum)
-# 	sum.each do |name, number|
-# 		puts number
-# 	end
-# end
-# total = total_students(students.values)
-# puts total
+total_students = 0
+students.each do |key, value|
+	total_students += value
+end
+
+puts total_students
