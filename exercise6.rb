@@ -15,17 +15,32 @@ grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 added_list(grocery_list, "rice")
 
 grocery_list.each_with_index do |item, index|
-	grocery_list[index] = "*#{item}"
+	grocery_list[index] = "* #{item}"
 end
 
 
-puts grocery_list.sort
 puts "There are #{grocery_list.count} items that need to be picked up."
 
-
+# Question 4
 puts "What are you looking for?"
 looking_for = gets.chomp
-
 look_for_items(grocery_list, looking_for)
 
+# Question 5
+
 puts grocery_list[1]
+
+
+# Question 6
+
+puts grocery_list.sort!
+
+
+# Question 7
+puts "************"
+#deleting salmon
+puts grocery_list.delete("* salmon")
+puts "************"
+
+puts grocery_list
+
