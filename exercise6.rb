@@ -45,3 +45,45 @@
 # puts grocery_list
 
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
+
+#Question_1
+def print_list (star)
+	star.each do |star|
+	puts "* #{star}"
+ end
+end
+puts "**Question_1 - putting asterisks infront of the items**"
+print_list(grocery_list)
+
+#Question_2
+def add_list (list, item)
+		list << item
+end
+puts "**Question_2 - adding new items**"
+added_list = add_list(grocery_list, "rice")
+print_list(added_list)
+
+# Question_3
+puts "**Question_3 - how many items need to be purchased**"
+puts "There are #{grocery_list.length} items that need to be purchased."
+
+#Question_4
+puts "**Question_4 - if the list has bananas**"
+if grocery_list.include? "bananas"
+	puts "You need to pick up bananas."
+else
+	puts "You don't need to pick up bananas today."
+end
+
+#Question_5
+puts "**Question_5 - finding out the second item in the array**"
+puts "The second item is the array is #{grocery_list[1]}."
+
+#Question_6
+puts "**Question_6 - sorting it alphabetically**"
+print_list(grocery_list.sort)
+
+#Question_7
+puts "**Question_7 - deleting salmon and redisplaying the list**s"
+grocery_list.delete("salmon")
+print_list(grocery_list.sort)
