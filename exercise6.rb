@@ -1,3 +1,4 @@
+##### FIRST ATTEMPT WITH PROMPTING INPUT FOR GETTING ITEMS LIKE BANANAS #####
 # def added_list(grocery_list, new_item)
 # 	grocery_list << new_item
 # end
@@ -44,6 +45,7 @@
 
 # puts grocery_list
 
+##### SECOND ATTEMPT AND HOPEFULLY IN MORE SIMPLE AND BETTER #####
 grocery_list = ["carrots", "toilet paper", "apples", "salmon"]
 
 #Question_1
